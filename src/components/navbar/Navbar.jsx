@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className="container">
         <div className="left">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png"
+            src="../../img/netflix_logo.png"
             alt=""
           />
           <span>Homepage</span>
@@ -29,7 +29,7 @@ const Navbar = () => {
           <span>KID</span>
           <Notifications className="icon" />
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
+            src="../../img/deafult_avatar.png"
             alt=""
           />
 
