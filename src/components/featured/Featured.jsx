@@ -1,6 +1,9 @@
 import { InfoOutlined, PlayArrow } from "@material-ui/icons"
 import "./featured.scss"
 
+import featured from "../../img/featured.jpeg";
+import title from "../../img/featured_title.webp";
+
 export default function Featured({ type }) {
     return (
         <div className="featured">
@@ -27,12 +30,12 @@ export default function Featured({ type }) {
             )}
             <img
                 width="100%"
-                src="../../img/featured.jpeg"
+                src={featured}
                 alt=""
             />
             <div className="info">
                 <img
-                    src="../../img/featured_title.webp"
+                    src={title}
                     alt=""
                 />
                 <span className="description">

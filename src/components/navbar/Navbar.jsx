@@ -2,6 +2,9 @@ import { ArrowDropDown, Notifications, Search } from "@material-ui/icons";
 import { useState } from "react";
 import "./navbar.scss";
 
+import logo from "../../img/netflix_logo.png";
+import avatar from "../../img/default_avatar.png";
+
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     window.onscroll = () => {
@@ -14,7 +17,7 @@ const Navbar = () => {
       <div className="container">
         <div className="left">
           <img
-            src="../../img/netflix_logo.png"
+            src={logo}
             alt=""
           />
           <span>Homepage</span>
@@ -29,7 +32,7 @@ const Navbar = () => {
           <span>KID</span>
           <Notifications className="icon" />
           <img
-            src="../../img/deafult_avatar.png"
+            src={avatar}
             alt=""
           />
 
