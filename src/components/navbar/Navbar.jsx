@@ -6,20 +6,17 @@ import logo from "../../img/netflix_logo.png";
 import avatar from "../../img/default_avatar.png";
 
 const Navbar = () => {
-    const [isScrolled, setIsScrolled] = useState(false);
-    window.onscroll = () => {
-        setIsScrolled(window.pageYOffset === 0 ? false : true);
-        return() => (window.onscroll = null);
-    }
+  const [isScrolled, setIsScrolled] = useState(false);
+  window.onscroll = () => {
+    setIsScrolled(window.pageYOffset === 0 ? false : true);
+    return () => (window.onscroll = null);
+  };
 
   return (
     <div className={isScrolled ? "navbar scrolled" : "navbar"}>
       <div className="container">
         <div className="left">
-          <img
-            src={logo}
-            alt=""
-          />
+          <img src={logo} alt="" />
           <span>Homepage</span>
           <span>Series</span>
           <span>Movies</span>
@@ -31,10 +28,7 @@ const Navbar = () => {
           <Search className="icon" />
           <span>KID</span>
           <Notifications className="icon" />
-          <img
-            src={avatar}
-            alt=""
-          />
+          <img src={avatar} alt="" />
 
           <div className="profile">
             <ArrowDropDown className="icon" />
